@@ -1,0 +1,16 @@
+name: metube
+replica: 1
+image:
+  name: alexta69/metube
+  tag: latest
+metadata:
+  namespace: apps
+service:
+  port: 8081
+  type: ClusterIP
+ingress:
+  host: "metube.devserver.ir"
+volume:
+  size: 4Gi
+
+
